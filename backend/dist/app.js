@@ -25,7 +25,7 @@ http.listen(PORT, function () {
 //   io.set( 'origins', '*localhost:4200' );
 // app.options('*', cors());
 io.on('connection', socket => {
-    console.log('new ws connectiom');
+    console.log('nw ws connectiom');
     socket.emit('message', 'welcome to chatcord');
     socket.on('message', (message) => {
         console.log("mesasge is commmmmm");

@@ -33,7 +33,7 @@ http.listen(PORT, function(){
 
 
 io.on('connection',socket=>{
-    console.log('new ws connectiom');
+    console.log('nw ws connectiom');
     socket.emit('message','welcome to chatcord');
 
     socket.on('message',(message:Message)=>{
